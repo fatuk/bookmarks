@@ -1,0 +1,26 @@
+[{
+	"id": 1,
+	"title": "Google",
+	"url": "http://google.ru",
+	"tags": {
+		"search engine": true,
+		"google": true
+	}
+}, {
+	"id": 2,
+	"title": "Yandex",
+	"url": "http://ya.ru",
+	"tags": {
+		"search engine": true,
+		"yandex": true
+	}
+}, {
+	"id": 3,
+	"title": "Sublime text 2 packages",
+	"url": "https://packagecontrol.io/",
+	"tags": {
+		"sublime text": true,
+		"packages": true,
+		"package control": true
+	}
+}]

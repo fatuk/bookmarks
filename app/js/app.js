@@ -1,0 +1,2 @@
+!function(){var t=[{id:1,title:"Google",url:"http://google.ru",tags:["boxing","mark"]},{id:2,title:"Yandex",url:"http://ya.ru",tags:["russia","boxing","memfis"]},{id:3,title:"Sublime text 2 packages",url:"https://packagecontrol.io/",tags:["memfis","boxing"]}],a=angular.module("app",[]);a.controller("BookmarksController",function(){var a=_.pluck(t,"tags"),e=_.flatten(a,!0),i=_.uniq(e),o=_.map(i,function(t){var a=_.where(e,t).length;return{title:t,count:a}});this.tags=o,this.data=t})}();
+//# sourceMappingURL=../js/app.js.map
