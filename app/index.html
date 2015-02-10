@@ -3,29 +3,34 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/app.css">
 </head>
 <body ng-app="app">
-	<div ng-controller="BookmarksController as bookmarks">
-		<h1>
-			Bookmarks ({{bookmarks.data.length}})
-		</h1>
-		<h2>
-			Tags
-		</h2>
-		<ul>
-			<li ng-repeat="tag in bookmarks.tags">
-				{{tag.title}} - ({{tag.count}})
-			</li>
-		</ul>
-		<label>
-			Search
-			<input type="text" ng-model="filterByTag">
-		</label>
-		<ul>
-			<li ng-repeat="bookmark in bookmarks.data | filter:filterByTag">
-				<a href="{{bookmark.url}}">{{bookmark.title}}</a>
-			</li>
-		</ul>
+	<div class="container">
+		<div ng-controller="BookmarksController as bookmarks">
+			<h1>
+				Bookmarks ({{bookmarks.data.length}})
+			</h1>
+			<h2>
+				Tags
+			</h2>
+			<ul>
+				<li ng-repeat="tag in bookmarks.tags">
+					{{tag.title}} - ({{tag.count}})
+				</li>
+			</ul>
+			<label>
+				Search
+				<input type="text" ng-model="filterByTag">
+			</label>
+			<ul>
+				<li ng-repeat="bookmark in bookmarks.data | filter:filterByTag">
+					<a href="{{bookmark.url}}">{{bookmark.title}}</a>
+				</li>
+			</ul>
+		</div>
 	</div>
 
 	<script src="js/plugins.min.js"></script>
