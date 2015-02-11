@@ -1,13 +1,30 @@
 body {
 	background: url('../assets/img/bg.jpg');
-	background-size: cover;
+	background-attachment: fixed;
 	font-family: 'Roboto', sans-serif;
-	color: #fff;
 }
 a {
 	color: #fff;
 }
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	margin: 0;
+}
 .container {
 	width: 1024px;
 	margin: 0 auto;
+	.clearfix();
+}
+* {
+	box-sizing: border-box;
+}
+
+// Placeholder color
+::-webkit-input-placeholder {color:@main-color;}
+::-moz-placeholder          {color:@main-color;}/* Firefox 19+ */
+:-moz-placeholder           {color:@main-color;}/* Firefox 18- */
+:-ms-input-placeholder      {color:@main-color;}
+
+.content {
+	padding-top: 61px;
 }

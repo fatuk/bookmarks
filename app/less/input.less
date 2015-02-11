@@ -1,0 +1,11 @@
+.input {
+	background: none;
+	border: solid 1px @main-color;
+	font-size: 1em;
+	padding: @base;
+	transition: border-color .3s;
+	&:focus {
+		outline: none;
+		border-color: lighten(@main-color, 40%);
+	}
+}
